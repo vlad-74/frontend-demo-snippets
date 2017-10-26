@@ -30,15 +30,15 @@
 ## ВЫВЕСТИ СОДЕРЖИМОЕ ПАПКИ 
 ### Файлы читаются из !!! из frontend-demo-snippets/demo !!! :
 ### например если нужно вывести содержимое папки : frontend-demo-snippets/demo/array
-####`set NODE_F=array&node content`
+#### `set NODE_F=array&node content`
 #### !!! на винде если был SET NODE_F то заданная переменная остется ПОСТОЯННО до следующего SET !!!
 
 ## ВЫВЕСТИ СОДЕРЖИМОЕ ФАЙЛА 
 ### Файлы читаются из !!! корневой папки frontend-demo-snippets и из frontend-demo-snippets/demo !!! :
 ### например если нужно вывести содержимое файла : frontend-demo-snippets/demo/array/dir/index.js
-####`set NODE_P=demo/array/dir/index.js&node read` (если Вы находитесь в frontend-demo-snippets)
+#### `set NODE_P=demo/array/dir/index.js&node read` (если Вы находитесь в frontend-demo-snippets)
 ### например если нужно вывести содержимое файла test.txt из дериктории выше папки frontend-demo-snippets: 
-####`set NODE_P=../test.txt&node read` (если Вы находитесь в frontend-demo-snippets)
+#### `set NODE_P=../test.txt&node read` (если Вы находитесь в frontend-demo-snippets)
 #### !!! на винде если был SET NODE_P то заданная переменная остется ПОСТОЯННО до следующего SET !!!
 
 ## ВЫВЕСТИ НАЗВАНИЯ ВСЕХ ФУНКЦИЙ В help-functions:
