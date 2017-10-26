@@ -1,8 +1,5 @@
-# ![#03CA27](https://placehold.it/30/c5f015/000000?text='') `frontend-demo-snippets - ЭТО КОНСОЛЬ-БРАУЗЕРНАЯ ВИЗУАЛИЗАЦИЯ ФУНКЦИОНАЛА javascript`
-# ![#03CA27](https://placehold.it/30/c5f015/000000?text='') `npm install frontend-demo-snippets`
-
+# ![#03CA27](https://placehold.it/30/c5f015/000000?text='') `frontend-demo-snippets - ЭТО КОНСОЛЬ-БРАУЗЕРНАЯ ВИЗУАЛИЗАЦИЯ ФУНКЦИОНАЛА javascript & css`
 # ![#FFDD00](https://placehold.it/20/FFDD00/000000?text='') `frontend-demo-snippets содержит библиотеку help-functions`
-# ![#FFDD00](https://placehold.it/20/FFDD00/000000?text='') `npm up frontend-demo-snippets` : обновить модуль у пользователя
 
 ## ПРИ УСТАНОВКЕ В node_modules УСТАНОВЯТСЯ МОДУЛИ :
 ### help-functions 	- рабочие функции
@@ -61,7 +58,5 @@
 
 ## [КОМАНДЫ ДЛЯ CMD ОТ ab57.ru](http://ab57.ru/cmdlist.html)
 ## [14 ОСНОВНЫХ КОМАНДЫ ДЛЯ CMD ОТ softrew.ru](http://www.softrew.ru/instructions/1382-14-komand-cmd-kotorye-dolzhen-znat-kazhdyy-polzovatel.html)
-### start http://127.0.0.1:3000/big.html
-### start D: .....\frontend-demo-snippets\demo\fs-streams2pipe\dir\index.js
 
 ### `"ПОПОЛНИМ КОПИЛКУ"` - ВЫСЫЛАЙТЕ СВОИ "РАБОЧИЕ" ФУНКЦИИ И DEMO

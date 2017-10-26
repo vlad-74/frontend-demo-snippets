@@ -1,0 +1,32 @@
+{
+  "name": "frontend-demo-snippets",
+  "version": "1.0.1",
+  "description": "snippets, demo, javascript, css, myFunctions",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vlad-74/frontend-demo-snippets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vlad-74/frontend-demo-snippets/issues"
+  },
+  "dependencies": {
+    "debug": "^3.1.0",
+    "ect": "^0.5.9",
+    "ejs": "^2.5.7",
+    "ejs-locals": "^1.0.2",
+    "express": "^3.21.2",
+    "help-functions": "^1.0.32",
+    "mongodb": "^2.2.33",
+    "mongoose": "^4.12.3",
+    "nconf": "^0.8.5",
+    "open": "0.0.5",
+    "winston": "^2.4.0"
+  },
+  "homepage": "https://github.com/vlad-74/frontend-demo-snippets#readme"
+}
