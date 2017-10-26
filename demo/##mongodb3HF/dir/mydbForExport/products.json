@@ -1,0 +1,12 @@
+{ 
+    "_id" : NumberInt(154), 
+    "name" : "Chocolate Heaven"
+}
+{ 
+    "_id" : NumberInt(155), 
+    "name" : "Tasty Lemon"
+}
+{ 
+    "_id" : NumberInt(156), 
+    "name" : "Vanilla Dream"
+}
