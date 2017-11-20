@@ -23,8 +23,10 @@ var log = require('./logger')(module);
 var db = require('./db');
 db.connect();
 
-var User = require('./user');
+function getFunctionName(){return (new Error()).stack.split('\n')[2].split(' ')[5];}
 
+var User = require('./user');
+// console.log('getFunctionName = ', hf.fun.getFunctionName());
 function run() {
   var vasya = new User("Вася");
   var petya = new User("Петя");
@@ -34,11 +36,13 @@ function run() {
   log(db.getPhrase("Run successful"));
 
   function test(r){
+    log(hf.fun.getFunctionName());
     return r;
   };
 
-  log(test('ВОЗВРАЩАЕТ return ФУНКЦИИ test'));
-  log('ПРОСТОЙ ТЕКСТ ЛОГА');
+  log(hf.fun.getFunctionName() + test('ВОЗВРАЩАЕТ return ФУНКЦИИ test '));
+
+  log(hf.fun.getFunctionName() + 'ТЕКСТ ЛОГА ');
 }
 
 if (module.parent) {

@@ -9,6 +9,7 @@ npm i -g node-inspector
 
 ОТЛАДКА ПРИ ПОМОЩИ БРАУЗЕРА CHROME (ЛОГИКА)
 1. В cmd набрать: node --debug #debug3Inspector/dir || node --debug-brk #debug3Inspector/dir (debug-brk - запускает скрипт в состояние останова)
+1.1. node --inspect #debug3Inspector/dir or node --inspect-brk #debug3Inspector/dir
 2. После запуска cmd - index.bat запускает - node-inspector = (open(__dirname + "/index.bat");)
 3. откроется браузер отладчик (url - адрес от node-inspector) = http://127.0.0.1:8080/?port=5858
 4. откроется тестируемый адрес = http://127.0.0.1:3000/echo?message=Hello
@@ -29,8 +30,8 @@ var server = new http.Server(function(req, res) {
 
   var urlParsed = url.parse(req.url, true);
 
-debugger;
-
+debugger; // остановка!!!!!!!!!
+ 
   if (urlParsed.pathname == '/echo' && urlParsed.query.message) {
     res.setHeader('Cache-control', 'no-cache,no-store,must-revalidate');
     res.writeHead(200, {"Content-Type": "text/html; charset=utf-8"});
@@ -44,7 +45,8 @@ debugger;
 server.listen(3000, '127.0.0.1');
 
 setTimeout(function(){
-	open("http://127.0.0.1:8080/?port=5858");
+	open("http://127.0.0.1:8080/?port=9229");
+  // open("http://127.0.0.1:8080/?port=5858");
 	setTimeout(function(){
 		open("http://127.0.0.1:3000/echo?message=в новом cmd окне запустить - node-inspector");
 	}, 5000)

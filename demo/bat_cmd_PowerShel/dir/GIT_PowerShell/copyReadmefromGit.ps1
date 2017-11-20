@@ -1,0 +1,1 @@
+Invoke-WebRequest -Uri https://raw.githubusercontent.com/vlad-74/spaphpwritefile/master/README.md -ContentType text/plain -OutFile D:\KROPOTBase\README.md

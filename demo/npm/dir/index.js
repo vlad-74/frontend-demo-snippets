@@ -27,5 +27,7 @@ npm help scripts  		СПИСОК ВСТРОЕННЫХ КОМАНД
 
 npm login
 npm logout
+
+C:/Users/TOMA/AppData/Roaming/npm
 `
 console.log(str);

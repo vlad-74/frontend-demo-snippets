@@ -11,6 +11,7 @@
 ### express			- веб-фреймворк, базовый пакет, для создания http-сервера
 ### mongodb			- native-driver для работы с MongoDB напрямую
 ### mongoose		- фреймверк, для удобной работы с MongoDB
+### connect-mongo	- сохраняет session 
 ### nconf			- для удобной работы с настройками приложения (собственный config.json)
 ### open			- открывает нужный URL/ФАЙЛ
 

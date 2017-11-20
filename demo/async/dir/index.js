@@ -47,6 +47,36 @@ async.parallel({
     console.log('parallel =  ',results); // results : {two: 2, one: 1} ИЗ-ЗА 105 У one И 100 У two
 });
 
+//waterfall - ДАННЫЕ ПЕРЕДАЮТСЯ ОТ ФУНКЦИИ К ФУНКЦИИ
+async.waterfall([
+    myFirstFunction,
+    mySecondFunction,
+    myLastFunction,
+], function (err, result) {
+    // result now equals 'done'
+    console.log('async.waterfall result = ', result);
+
+});
+function myFirstFunction(callback) {
+    setTimeout(function() {
+      console.log('300 myFirstFunction = ', 'one', 'two');
+      callback(null, 'one', 'two');
+  }, 300);
+}
+function mySecondFunction(arg1, arg2, callback) {
+    // arg1 now equals 'one' and arg2 now equals 'two'
+    setTimeout(function() {
+      console.log('200 mySecondFunction arg1, arg2 = ', arg1, arg2);
+      callback(null, 'three');
+    }, 200);
+}
+function myLastFunction(arg1, callback) {
+    // arg1 now equals 'three'
+    setTimeout(function() {
+      console.log('100 myLastFunction arg1 = ', arg1);
+      callback(null, 'done');
+    }, 100);
+}
 
 async.series({
     one: function(callback) {

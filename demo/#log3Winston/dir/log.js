@@ -14,7 +14,7 @@ function makeLogger(path) {
       new winston.transports.Console({
         timestamp: true, // function() { return new Date().toString() }
         colorize: true,
-        label: path.substring(path.indexOf('##log\\dir') +65), // ПУТЬ
+        label: path.substring(path.indexOf('#logWinston/dir') + 67), // ПУТЬ
         level: prod // НАЧАЛЬНЫЙ УРОВЕНЬ ОТРАЖЕНИЯ СООБЩЕНИЙ - error: 0, warn: 1, info: 2, verbose: 3, debug: 4, silly: 5 
       }),
       new winston.transports.File({ filename: 'debug.log', level: 'debug' })
