@@ -1,5 +1,6 @@
 {
   "verbose": true,
+  "watch": "./app",
   "env": {
     "PRIVATE_KEY2": "test"
   }

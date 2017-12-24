@@ -11,4 +11,4 @@ console.log('\n' + gl_hr + '\n' +'РЕЗУЛЬТАТ ФАЙЛА : ' + __filename
 // });
 //-------------------------------СОДЕРЖИМОЕ ФАЙЛА--------------------------------------
 
-console.log('hello nodemon!!!!', process.env.PRIVATE_KEY2)
+console.log('hello nodemon!!!', process.env.PRIVATE_KEY2)

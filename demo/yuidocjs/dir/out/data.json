@@ -1,0 +1,173 @@
+{
+    "project": {},
+    "files": {
+        "index.js": {
+            "name": "index.js",
+            "modules": {
+                "myapp": 1
+            },
+            "classes": {
+                "MYAPP.math_stuff": 1,
+                "MYAPP.Person": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "MYAPP": 1
+            }
+        }
+    },
+    "modules": {
+        "myapp": {
+            "name": "myapp",
+            "submodules": {},
+            "elements": {},
+            "classes": {
+                "MYAPP.math_stuff": 1,
+                "MYAPP.Person": 1
+            },
+            "fors": {},
+            "namespaces": {
+                "MYAPP": 1
+            },
+            "tag": "module",
+            "file": "index.js",
+            "line": 39,
+            "description": "My JavaScript application"
+        }
+    },
+    "classes": {
+        "MYAPP.math_stuff": {
+            "name": "MYAPP.math_stuff",
+            "shortname": "MYAPP.math_stuff",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "myapp",
+            "namespace": "MYAPP",
+            "file": "index.js",
+            "line": 7,
+            "description": "A math utility"
+        },
+        "MYAPP.Person": {
+            "name": "MYAPP.Person",
+            "shortname": "MYAPP.Person",
+            "classitems": [],
+            "plugins": [],
+            "extensions": [],
+            "plugin_for": [],
+            "extension_for": [],
+            "module": "myapp",
+            "namespace": "MYAPP",
+            "file": "index.js",
+            "line": 39,
+            "description": "Constructs Person objects",
+            "is_constructor": 1,
+            "params": [
+                {
+                    "name": "first",
+                    "description": "First name",
+                    "type": "String"
+                },
+                {
+                    "name": "last",
+                    "description": "Last name",
+                    "type": "String"
+                }
+            ]
+        }
+    },
+    "elements": {},
+    "classitems": [
+        {
+            "file": "index.js",
+            "line": 14,
+            "description": "Sums two numbers",
+            "itemtype": "method",
+            "name": "sum",
+            "params": [
+                {
+                    "name": "a",
+                    "description": "First number",
+                    "type": "Number"
+                },
+                {
+                    "name": "b",
+                    "description": "The second number",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "The sum of the two inputs",
+                "type": "Number"
+            },
+            "class": "MYAPP.math_stuff",
+            "module": "myapp",
+            "namespace": "MYAPP"
+        },
+        {
+            "file": "index.js",
+            "line": 26,
+            "description": "Multiplies two numbers",
+            "itemtype": "method",
+            "name": "multi",
+            "params": [
+                {
+                    "name": "a",
+                    "description": "First number",
+                    "type": "Number"
+                },
+                {
+                    "name": "b",
+                    "description": "The second number",
+                    "type": "Number"
+                }
+            ],
+            "return": {
+                "description": "The two inputs multiplied",
+                "type": "Number"
+            },
+            "class": "MYAPP.math_stuff",
+            "module": "myapp",
+            "namespace": "MYAPP"
+        },
+        {
+            "file": "index.js",
+            "line": 48,
+            "description": "Name of the person",
+            "itemtype": "property",
+            "name": "first_name",
+            "type": "String",
+            "class": "MYAPP.Person",
+            "module": "myapp",
+            "namespace": "MYAPP"
+        },
+        {
+            "file": "index.js",
+            "line": 54,
+            "description": "Last (family) name of the person",
+            "itemtype": "property",
+            "name": "last_name",
+            "type": "String",
+            "class": "MYAPP.Person",
+            "module": "myapp",
+            "namespace": "MYAPP"
+        },
+        {
+            "file": "index.js",
+            "line": 63,
+            "description": "Returns the name of the person object",
+            "itemtype": "method",
+            "name": "getName",
+            "return": {
+                "description": "The name of the person",
+                "type": "String"
+            },
+            "class": "MYAPP.Person",
+            "module": "myapp",
+            "namespace": "MYAPP"
+        }
+    ],
+    "warnings": []
+}

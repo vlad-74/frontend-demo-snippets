@@ -27,15 +27,15 @@ http.createServer(function(req, res) {
   }
 }).listen(3000);
 `;
-console.log(str);
-console.log(gl_rz);
+// console.log(str);
+// console.log(gl_rz);
 //сюда вставляется код
 var http = require('http');
 var fs = require('fs');
+var open = false;
 
 http.createServer(function(req, res) {
   if (req.url == '/') {
-console.log(str);
     fs.readFile(__dirname + '/index.html', function(err, info) {
       if (err) {
         console.error(err);
@@ -53,5 +53,7 @@ console.log(str);
 }).listen(3000);
 console.log(gl_hr);
 
-var open = require("open");
-open("http://127.0.0.1:3000");
+
+  // var open = require("open");
+  // open("D:/_DEVELOPER/Sites/_GIT/frontend-demo-snippets/demo/node_nodemon/dir/app/index.html");
+  // open("http://127.0.0.1:3000");
